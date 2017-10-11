@@ -1,12 +1,13 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML >
-<html>
 
+<html>
 <head>
 	<title>个人信息</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../static/css/common.css">
-	<link rel="stylesheet" type="text/css" href="../static/css/personInfo.css">
-	<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/exam/static/frontpages/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/exam/static/frontpages/css/personInfo.css">
+	<link rel="stylesheet" type="text/css" href="/exam/static/frontpages/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
 	<div id="logo" class="col-md-4"><img src="/exam/static/frontpages/images/logo.png" class="img-responsive"></div>
 	<div id="sign" class="col-md-3">
 		<div id="leaf"></div>
-		<a href="/studentController/logout" id="login">登出</a>
+		<a href="/exam/studentController/logout" id="login">登出</a>
 	</div>
 </div>
 	<div id="main">
@@ -100,9 +101,9 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="../static/js/jquery-2.1.1.js"></script>
-	<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../static/js/personInfo.js"></script>
+	<script type="text/javascript" src="/exam/static/frontpages/js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="/exam/static/frontpages/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/exam/static/frontpages/js/personInfo.js"></script>
 </body>
 
 </html>

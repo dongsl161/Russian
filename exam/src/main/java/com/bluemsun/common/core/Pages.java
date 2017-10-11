@@ -13,5 +13,7 @@ public class Pages {
     // 前台开始试题页
     public final static String FRONTEXAM = "frontpages/pages/testing";
 
+    // 前台个人中心页
+    public final static String FRONTPERSONAL = "frontpages/pages/personInfo";
 
 }

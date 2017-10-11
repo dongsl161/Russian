@@ -9,6 +9,10 @@ import com.bluemsun.common.entitys.FinishExamination;
  */
 public class FinishExaminationVo extends FinishExamination {
 
+    private String editionName;
+
+    private String unitName;
+
     private String examinationName;
 
     private String studentName;
@@ -27,5 +31,21 @@ public class FinishExaminationVo extends FinishExamination {
 
     public void setExaminationName(String examinationName) {
         this.examinationName = examinationName;
+    }
+
+    public String getEditionName() {
+        return editionName;
+    }
+
+    public void setEditionName(String editionName) {
+        this.editionName = editionName;
+    }
+
+    public String getUnitName() {
+        return unitName;
+    }
+
+    public void setUnitName(String unitName) {
+        this.unitName = unitName;
     }
 }

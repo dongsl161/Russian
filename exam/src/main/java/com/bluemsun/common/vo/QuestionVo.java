@@ -15,6 +15,8 @@ public class QuestionVo extends Question {
 
     private FinishAnswer finishAnswer;
 
+    private String studentAnswer;
+
     public FinishAnswer getFinishAnswer() {
         return finishAnswer;
     }
@@ -30,4 +32,13 @@ public class QuestionVo extends Question {
     public void setOutline(String[] outline) {
         this.outline = outline;
     }
+
+    public String getStudentAnswer() {
+        return studentAnswer;
+    }
+
+    public void setStudentAnswer(String studentAnswer) {
+        this.studentAnswer = studentAnswer;
+    }
+
 }

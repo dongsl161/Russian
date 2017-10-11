@@ -15,10 +15,10 @@
 		<div id="header" class="row">
 			<div id="header-content">
 				<div id="logo" class="col-md-4"><img src="static/frontpages/images/logo.png" class="img-responsive"></div>
-				<div id="sign" class="col-md-3">
-					<div id="leaf"></div>
-					<a href="##" id="login">返回首页</a>
-				</div>
+				<%--<div id="sign" class="col-md-3">--%>
+					<%--<div id="leaf"></div>--%>
+					<%--<a href="##" id="login">返回首页</a>--%>
+				<%--</div>--%>
 			</div>
 		</div>
 		<!--头部-->

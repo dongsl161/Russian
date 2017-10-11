@@ -1,5 +1,7 @@
 package com.bluemsun.common.entitys;
 
+import java.util.Date;
+
 /**
  * @ClassName: FinishExamination
  * @Description: 学生已完成的试卷的实体类
@@ -17,6 +19,16 @@ public class FinishExamination {
 	private String finishAlready;
 
 	private String unitId;
+
+	private Date finishTime;
+
+	public Date getFinishTime() {
+		return finishTime;
+	}
+
+	public void setFinishTime(Date finishTime) {
+		this.finishTime = finishTime;
+	}
 
 	public String getId() {
 		return id;
@@ -58,4 +70,13 @@ public class FinishExamination {
 		this.unitId = unitId;
 	}
 
+	public FinishExamination(String studentId, String examinationId, String unitId) {
+		this.studentId = studentId;
+		this.examinationId = examinationId;
+		this.unitId = unitId;
+	}
+
+	public FinishExamination() {
+
+	}
 }

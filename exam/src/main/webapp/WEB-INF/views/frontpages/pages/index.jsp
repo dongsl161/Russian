@@ -16,7 +16,7 @@
 		<div id="logo" class="col-md-4"><img src="/exam/static/frontpages/images/logo.png" class="img-responsive"></div>
 		<div id="sign" class="col-md-3">
 			<div id="leaf"></div>
-			<a href="/studentController/logout" id="login">登出</a>
+			<a href="/exam/studentController/logout" id="login">登出</a>
 		</div>
 	</div>
 	<!--头部-->
@@ -25,7 +25,7 @@
 			<ul>
 				<li id="test"><a href="#"><img src="/exam/static/frontpages/images/test2.png" id="test2"></a></li>
 				<li id="liuyan"><a href="liuyan.html"><img src="/exam/static/frontpages/images/liuyan2.png"></a></li>
-				<li id="info"><a href="personInfo.html"><img src="/exam/static/frontpages/images/info2.png"></a></li>
+				<li id="info"><a href="/exam/studentController/toPersonal"><img src="/exam/static/frontpages/images/info2.png"></a></li>
 			</ul>
 
 			<div class="modal fade" id="demoModal" data-backdrop="static">

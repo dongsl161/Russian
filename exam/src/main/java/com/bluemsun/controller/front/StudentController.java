@@ -30,7 +30,8 @@ public class StudentController {
     @RequestMapping("/login")
     public String login(Student student, HttpSession session) throws IOException {
         if(studentService.checkLogin(student.getStudentNumber(), student.getStudentPassword())) {
-            session.setAttribute("student", student);
+            Student studentDetail = studentService.selectByNum(student.getStudentNumber(), student.getStudentPassword());
+            session.setAttribute("student", studentDetail);
             return Pages.FRONTINDEX;
         }
         return "redirect:/login.jsp";
@@ -45,6 +46,16 @@ public class StudentController {
     public String logout(HttpSession session) {
         session.removeAttribute("student");
         return "redirect:/login.jsp";
+    }
+
+
+    /**
+    * @Description: 进入学生个人中心
+    * @Date: 2017/9/28 16:56
+    */
+    @RequestMapping("/toPersonal")
+    public String toPersonal() {
+        return Pages.FRONTPERSONAL;
     }
 
 

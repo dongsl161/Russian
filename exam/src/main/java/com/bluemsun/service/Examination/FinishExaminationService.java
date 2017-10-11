@@ -24,8 +24,9 @@ public class FinishExaminationService {
     * @Description: 添加一套已完成的试卷
     * @Date: 2017/9/13 19:35
     */
-    public void addFinishExamination(FinishExamination finishExamination) {
-        finishExaminationDao.addFinishExamination(finishExamination);
+    public String addFinishExamination(FinishExamination finishExamination) {
+        String id = finishExaminationDao.addFinishExamination(finishExamination);
+        return id;
     }
 
 
@@ -48,12 +49,22 @@ public class FinishExaminationService {
 
 
     /**
-    * @Description: 多条件查询完成的试卷
+    * @Description: 学生查看试卷
     * @Date: 2017/9/13 19:44
     */
-    public List<FinishExaminationVo> selectFinExamByUnit(String unit, int grade, String studentId) {
-        return finishExaminationDao.selectFinExamByUnit(unit, grade, studentId);
+    public List<FinishExaminationVo> selectFromStudent(String studentId) {
+        return finishExaminationDao.selectFromStudent(studentId);
     }
+
+    /**
+    * @Description: 老师查询
+    * @Date: 2017/10/11 19:30
+    */
+    public List<FinishExaminationVo> selectFromTeacher(String editionId, String finishAlready, String unitId) {
+        return finishExaminationDao.selectFromTeacher(editionId, finishAlready, unitId);
+    }
+
+
 
 
 }
